@@ -23,13 +23,13 @@ class LinkedList
 	Node slowpointer = head;
         Node fastpointer = head;
          
-            while (fast_ptr != null && fast_ptr.next != null)
+            while (fastpointer != null && fastpointer.next != null)
             {
-                fast_ptr = fast_ptr.next.next;
-                slow_ptr = slow_ptr.next;
+                fastpointer = fastpointer.next.next;
+                slowpointer = slowpointer.next;
             }
             System.out.println("The middle element is [" +
-                                slow_ptr.data + "] \n");
+                                slowpointer.data + "] \n");
     } 
   
     public void push(int new_data) 
